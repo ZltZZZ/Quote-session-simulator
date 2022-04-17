@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1t3ca9pmlje08</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Sprite" sid="282545714404575">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="149385009875817" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="202126481991878">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite2" sid="429753046119374">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="797032557007585" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StartSimulation" sid="611873092529062">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="ResetSimulation" sid="117919181428302">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="StopSimulation" sid="919134292773035">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Text2" sid="476137243538883">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TimerText" sid="546831689640955">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text3" sid="824966376089067">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="NumberWinnerText" sid="908530282847850">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text4" sid="352371554481935">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="StartPriceText" sid="519299215000005">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CurrPriceText" sid="419208431944589">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="StepText" sid="820459981633088">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Number1" sid="467340340822745">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Number2" sid="618579224837842">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Number3" sid="796389540025870">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Exit1" sid="660348999190342">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Exit2" sid="283930872130649">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Exit3" sid="468372837509466">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CountAct1" sid="193063555588565">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CountAct2" sid="544489782221532">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CountAct3" sid="450742204053329">
+            <plugin id="Text" />
+        </object-type>
+        <object-type global="1" name="ExitAndCountAct" sid="642919062210667">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="StateT" sid="274021682814914">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="State1" sid="749435552638923">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="State2" sid="635088485195009">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="State3" sid="636626878031860">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Change1" sid="792231295799937">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Send1" sid="655495554223015">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Change2" sid="883221669804882">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Send2" sid="537519901721196">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Change3" sid="188679334301906">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Send3" sid="893288417086357">
+            <plugin id="Button" />
+        </object-type>
+        <object-type global="1" name="Form" sid="788029274956074">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="TimerConflict1" sid="475140783525530">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="left1" sid="547746860148561">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TimerConflict2" sid="879997952786670">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TimerConflict3" sid="682315886193761">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="left3" sid="463533812879754">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="left2" sid="619558973489583">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextBox" sid="202740269123571">
+            <plugin id="TextBox" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

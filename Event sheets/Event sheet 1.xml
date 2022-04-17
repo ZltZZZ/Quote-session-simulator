@@ -1,0 +1,2405 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="CState3" sid="422145619959783" static="0" type="text"></variable>
+        <variable constant="0" name="CState2" sid="212492138311503" static="0" type="text"></variable>
+        <variable constant="0" name="CState1" sid="981240396923360" static="0" type="text"></variable>
+        <variable constant="0" name="CPorog4" sid="752694735901841" static="0" type="number">0</variable>
+        <variable constant="0" name="CPorog2" sid="389387491066051" static="0" type="number">0</variable>
+        <variable constant="0" name="CPorog1" sid="578854403162626" static="0" type="number">0</variable>
+        <variable constant="0" name="isXBET" sid="639031981385398" static="0" type="number">0</variable>
+        <variable constant="0" name="prevWinner" sid="553426542808986" static="0" type="number">-1</variable>
+        <variable constant="0" name="trash3" sid="619348151327646" static="0" type="number">9999</variable>
+        <variable constant="0" name="trash2" sid="558531702000843" static="0" type="number">1111</variable>
+        <variable constant="0" name="trash" sid="255700177414697" static="0" type="number">123</variable>
+        <variable constant="0" name="TimerConflict" sid="119485073510139" static="0" type="number">0</variable>
+        <variable constant="0" name="isTimerConflict" sid="437684253528751" static="0" type="number">0</variable>
+        <variable constant="0" name="IsConflict" sid="561088497677640" static="0" type="number">0</variable>
+        <variable constant="0" name="No" sid="857352423371868" static="0" type="number">0</variable>
+        <variable constant="0" name="Yes" sid="140410704491807" static="0" type="number">1</variable>
+        <variable constant="0" name="Porog" sid="280130439953605" static="0" type="number">0</variable>
+        <variable constant="0" name="CountSess" sid="160863759916457" static="0" type="number">1</variable>
+        <variable constant="0" name="StateC" sid="972135471029587" static="0" type="number">2</variable>
+        <variable constant="0" name="TimerConst" sid="262890686240479" static="0" type="number">360</variable>
+        <variable constant="0" name="IsGamePlaying" sid="565518281107830" static="0" type="number">0</variable>
+        <variable constant="0" name="CisXBET" sid="429117307490169" static="0" type="number">0</variable>
+        <variable constant="0" name="CprevWinner3" sid="406942861321373" static="0" type="number">-1</variable>
+        <variable constant="0" name="Ctrash8" sid="896565646795717" static="0" type="number">9999</variable>
+        <variable constant="0" name="Ctrash9" sid="737145613921687" static="0" type="number">1111</variable>
+        <variable constant="0" name="Ctrash7" sid="450336903314042" static="0" type="number">123</variable>
+        <variable constant="0" name="CTimerConflict3" sid="808786267747636" static="0" type="number">0</variable>
+        <variable constant="0" name="CisTimerConflict3" sid="565466681594298" static="0" type="number">0</variable>
+        <variable constant="0" name="CIsConflict3" sid="256604913235441" static="0" type="number">0</variable>
+        <variable constant="0" name="CNo3" sid="529938839247475" static="0" type="number">0</variable>
+        <variable constant="0" name="CYes3" sid="694800628934027" static="0" type="number">1</variable>
+        <variable constant="0" name="CPorog3" sid="685017656811120" static="0" type="number">0</variable>
+        <variable constant="0" name="CCountSess3" sid="317887871983440" static="0" type="number">1</variable>
+        <variable constant="0" name="CStateC3" sid="348613725738887" static="0" type="number">2</variable>
+        <variable constant="0" name="CTimerConst3" sid="180060003354803" static="0" type="number">360</variable>
+        <variable constant="0" name="CIsGamePlaying3" sid="585670436708539" static="0" type="number">0</variable>
+        <variable constant="0" name="CTimer3" sid="681773802142514" static="0" type="number">360</variable>
+        <variable constant="0" name="CNumberWinner3" sid="951203525934770" static="0" type="number">-1</variable>
+        <variable constant="0" name="CStartPrice3" sid="946185401686686" static="0" type="number">1000</variable>
+        <variable constant="0" name="CCurrPrice3" sid="705438915783787" static="0" type="number">1000</variable>
+        <variable constant="0" name="CStep3" sid="626478182710442" static="0" type="number">50</variable>
+        <variable constant="0" name="CNumber3" sid="746414054720974" static="0" type="number">0</variable>
+        <variable constant="0" name="CPorogExit3" sid="259164603076153" static="0" type="number">0</variable>
+        <variable constant="0" name="CCountActiveSessions3" sid="614301524660349" static="0" type="number">0</variable>
+        <variable constant="0" name="Timer" sid="101162897200236" static="0" type="number">360</variable>
+        <variable constant="0" name="NumberWinner" sid="662613997581563" static="0" type="number">-1</variable>
+        <variable constant="0" name="StartPrice" sid="430413225564280" static="0" type="number">1000</variable>
+        <variable constant="0" name="CurrPrice" sid="877945015774611" static="0" type="number">1000</variable>
+        <variable constant="0" name="Step" sid="927465445394035" static="0" type="number">50</variable>
+        <variable constant="0" name="Number" sid="495783916648188" static="0" type="number">0</variable>
+        <variable constant="0" name="PorogExit" sid="275130980847130" static="0" type="number">0</variable>
+        <variable constant="0" name="CountActiveSessions" sid="211103162560064" static="0" type="number">0</variable>
+        <event-block sid="763421161657474">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="192924798542121" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="342350125678030" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="321098315793420" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="263231699846986" type="TimerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;int(Timer/60)&amp;&quot;min. &quot;&amp;(Timer - int(Timer/60)*60)&amp;&quot;sec.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="333444841234403">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="983265317009114" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="900204020312064" type="StartPriceText">
+                    <param id="0" name="Text">&quot;&quot;&amp;StartPrice</param>
+                </action>
+                <action id="0" name="Set text" sid="922038034517125" type="CurrPriceText">
+                    <param id="0" name="Text">&quot;&quot;&amp;StartPrice</param>
+                </action>
+                <action id="0" name="Set text" sid="686574787946540" type="StepText">
+                    <param id="0" name="Text">&quot;&quot;&amp;Step</param>
+                </action>
+                <action id="3" name="Set at XY" sid="899198785966057" type="ExitAndCountAct">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">Porog</param>
+                    <param id="2" name="Value">300</param>
+                </action>
+                <action id="3" name="Set at XY" sid="707130737686365" type="ExitAndCountAct">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">Porog</param>
+                    <param id="2" name="Value">300</param>
+                </action>
+                <action id="3" name="Set at XY" sid="695570429422687" type="ExitAndCountAct">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">Porog</param>
+                    <param id="2" name="Value">300</param>
+                </action>
+                <action id="3" name="Set at XY" sid="306021122560068" type="ExitAndCountAct">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">CountSess</param>
+                    <param id="2" name="Value">3</param>
+                </action>
+                <action id="3" name="Set at XY" sid="972434667712046" type="ExitAndCountAct">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">CountSess</param>
+                    <param id="2" name="Value">3</param>
+                </action>
+                <action id="3" name="Set at XY" sid="601942588594160" type="ExitAndCountAct">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">CountSess</param>
+                    <param id="2" name="Value">3</param>
+                </action>
+                <action id="3" name="Set at XY" sid="344859185533710" type="ExitAndCountAct">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">StateC</param>
+                    <param id="2" name="Value">&quot;Автоматический&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="993715800178880" type="ExitAndCountAct">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">StateC</param>
+                    <param id="2" name="Value">&quot;Автоматический&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="639385288172620" type="ExitAndCountAct">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">StateC</param>
+                    <param id="2" name="Value">&quot;Автоматический&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="725000335603435" type="System">
+                    <param id="0" name="Variable">CState1</param>
+                    <param id="1" name="Value">ExitAndCountAct.At(0, StateC)</param>
+                </action>
+                <action id="-9" name="Set value" sid="920077786061286" type="System">
+                    <param id="0" name="Variable">CState2</param>
+                    <param id="1" name="Value">ExitAndCountAct.At(1, StateC)</param>
+                </action>
+                <action id="-9" name="Set value" sid="239552509569681" type="System">
+                    <param id="0" name="Variable">CState3</param>
+                    <param id="1" name="Value">ExitAndCountAct.At(2, StateC)</param>
+                </action>
+                <action id="-9" name="Set value" sid="633386903021235" type="System">
+                    <param id="0" name="Variable">CPorog1</param>
+                    <param id="1" name="Value">ExitAndCountAct.At(0, Porog)</param>
+                </action>
+                <action id="-9" name="Set value" sid="292686225432412" type="System">
+                    <param id="0" name="Variable">CPorog2</param>
+                    <param id="1" name="Value">ExitAndCountAct.At(1, Porog)</param>
+                </action>
+                <action id="-9" name="Set value" sid="536374493351146" type="System">
+                    <param id="0" name="Variable">CPorog4</param>
+                    <param id="1" name="Value">ExitAndCountAct.At(2, Porog)</param>
+                </action>
+                <action id="0" name="Set text" sid="718674239399780" type="State1">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(0,2)</param>
+                </action>
+                <action id="0" name="Set text" sid="384764441730035" type="State2">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(1,2)</param>
+                </action>
+                <action id="0" name="Set text" sid="838070427272596" type="State3">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(2, 2)</param>
+                </action>
+                <action id="0" name="Set text" sid="476875858264266" type="Exit1">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(0, 0)</param>
+                </action>
+                <action id="0" name="Set text" sid="164749412108766" type="Exit2">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(1, 0)</param>
+                </action>
+                <action id="0" name="Set text" sid="513213769845445" type="Exit3">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(2, 0)</param>
+                </action>
+                <action id="0" name="Set text" sid="727557867155399" type="CountAct1">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(0, 1)</param>
+                </action>
+                <action id="0" name="Set text" sid="189229663790966" type="CountAct2">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(1, 1)</param>
+                </action>
+                <action id="0" name="Set text" sid="637704105512722" type="CountAct3">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(2, 1)</param>
+                </action>
+                <action id="0" name="Set text" sid="533783120470586" type="TimerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;int(Timer/60)&amp;&quot;min. &quot;&amp;(Timer - int(Timer/60)*60)&amp;&quot;sec.&quot;</param>
+                </action>
+                <action id="2" name="Set visible" sid="205462163656689" type="StopSimulation">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="309048741595250" type="Change1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="517689875790727" type="Change2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="859017331173118" type="Change3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="313376481807057" type="Send1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="117066317945428" type="Send2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="110175098435992" type="Send3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="3" name="Set at XY" sid="486253604722558" type="Form">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="648279211759014" type="Form">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="955417651027226" type="Form">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="-15" name="Set visible" sid="694297217536198" type="left1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="450938916147186" type="left2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="459666205819165" type="left3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="820106214768318" type="TimerConflict1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="960485909184302" type="TimerConflict2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="948727118575249" type="TimerConflict3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="783194587154812">
+            <conditions>
+                <condition id="0" name="On clicked" sid="890098322789278" type="StartSimulation" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="173134990579847" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="118115083181149" type="ResetSimulation">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="181389671442295" type="StartSimulation">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="735728575628631" type="StopSimulation">
+                    <param id="0" name="Text">&quot;Остановить сессию&quot;</param>
+                </action>
+                <action id="2" name="Set visible" sid="453945805132970" type="StopSimulation">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="835186735871659">
+            <conditions>
+                <condition id="0" name="On clicked" sid="572665456457706" type="StopSimulation" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="339039642298029">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="359665652239418" type="System">
+                            <param id="0" name="Variable">IsGamePlaying</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set visible" sid="594560571108666" type="ResetSimulation">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="677021899574984" type="StopSimulation">
+                            <param id="0" name="Text">&quot;Продолжить сессию&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="221897768027219" type="System">
+                            <param id="0" name="Variable">IsGamePlaying</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="357689835356015">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="693716775242438" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set visible" sid="749290915339828" type="ResetSimulation">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="506864055703885" type="StopSimulation">
+                            <param id="0" name="Text">&quot;Остановить сессию&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="134755260414737" type="System">
+                            <param id="0" name="Variable">IsGamePlaying</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="558697766326734">
+            <conditions>
+                <condition id="0" name="On clicked" sid="684051730595089" type="ResetSimulation" />
+            </conditions>
+            <actions>
+                <action id="2" name="Set visible" sid="835754713287636" type="StartSimulation">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="857281005992877" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="398964367394879" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">TimerConst</param>
+                </action>
+                <action id="0" name="Set text" sid="130668289896424" type="TimerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;int(Timer/60)&amp;&quot;min. &quot;&amp;(Timer - int(Timer/60)*60)&amp;&quot;sec.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="598029938402249" type="CurrPriceText">
+                    <param id="0" name="Text">&quot;&quot;&amp;StartPrice</param>
+                </action>
+                <action id="2" name="Set visible" sid="168018813021475" type="StopSimulation">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="818315652044343" type="StopSimulation">
+                    <param id="0" name="Text">&quot;Остановить сессию&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="454943205734814" type="System">
+                    <param id="0" name="Variable">Yes</param>
+                    <param id="1" name="Value">CYes3</param>
+                </action>
+                <action id="-9" name="Set value" sid="956495191196686" type="System">
+                    <param id="0" name="Variable">TimerConst</param>
+                    <param id="1" name="Value">CTimerConst3</param>
+                </action>
+                <action id="-9" name="Set value" sid="124078410590934" type="System">
+                    <param id="0" name="Variable">TimerConflict</param>
+                    <param id="1" name="Value">CTimerConflict3</param>
+                </action>
+                <action id="-9" name="Set value" sid="777643560135998" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">CTimer3</param>
+                </action>
+                <action id="-9" name="Set value" sid="748626803953066" type="System">
+                    <param id="0" name="Variable">Step</param>
+                    <param id="1" name="Value">CStep3</param>
+                </action>
+                <action id="-9" name="Set value" sid="983125887753493" type="System">
+                    <param id="0" name="Variable">StateC</param>
+                    <param id="1" name="Value">CStateC3</param>
+                </action>
+                <action id="-9" name="Set value" sid="986125559110564" type="System">
+                    <param id="0" name="Variable">StartPrice</param>
+                    <param id="1" name="Value">CStartPrice3</param>
+                </action>
+                <action id="-9" name="Set value" sid="823011183152146" type="System">
+                    <param id="0" name="Variable">prevWinner</param>
+                    <param id="1" name="Value">CprevWinner3</param>
+                </action>
+                <action id="-9" name="Set value" sid="352943904184850" type="System">
+                    <param id="0" name="Variable">Porog</param>
+                    <param id="1" name="Value">CPorog3</param>
+                </action>
+                <action id="-9" name="Set value" sid="518293500623158" type="System">
+                    <param id="0" name="Variable">NumberWinner</param>
+                    <param id="1" name="Value">CNumberWinner3</param>
+                </action>
+                <action id="-9" name="Set value" sid="239936824217323" type="System">
+                    <param id="0" name="Variable">Number</param>
+                    <param id="1" name="Value">CNumber3</param>
+                </action>
+                <action id="-9" name="Set value" sid="817767545168518" type="System">
+                    <param id="0" name="Variable">No</param>
+                    <param id="1" name="Value">CNo3</param>
+                </action>
+                <action id="-9" name="Set value" sid="227182722808587" type="System">
+                    <param id="0" name="Variable">isXBET</param>
+                    <param id="1" name="Value">CisXBET</param>
+                </action>
+                <action id="-9" name="Set value" sid="941651859388165" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Value">CisTimerConflict3</param>
+                </action>
+                <action id="-9" name="Set value" sid="880444758797123" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Value">CIsGamePlaying3</param>
+                </action>
+                <action id="-9" name="Set value" sid="886314982327467" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Value">CIsConflict3</param>
+                </action>
+                <action id="3" name="Set at XY" sid="740166647007844" type="ExitAndCountAct">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">StateC</param>
+                    <param id="2" name="Value">CState1</param>
+                </action>
+                <action id="3" name="Set at XY" sid="809690852653294" type="ExitAndCountAct">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">StateC</param>
+                    <param id="2" name="Value">CState2</param>
+                </action>
+                <action id="3" name="Set at XY" sid="360605918852382" type="ExitAndCountAct">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">StateC</param>
+                    <param id="2" name="Value">CState3</param>
+                </action>
+                <action id="3" name="Set at XY" sid="248688843720770" type="ExitAndCountAct">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">Porog</param>
+                    <param id="2" name="Value">CPorog1</param>
+                </action>
+                <action id="3" name="Set at XY" sid="294936823199544" type="ExitAndCountAct">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">Porog</param>
+                    <param id="2" name="Value">CPorog2</param>
+                </action>
+                <action id="3" name="Set at XY" sid="980415427160923" type="ExitAndCountAct">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">Porog</param>
+                    <param id="2" name="Value">CPorog4</param>
+                </action>
+                <action id="2" name="Set visible" sid="842290554791959" type="Change1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="220473686748639" type="Change2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="761872374629521" type="Change3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="475169819834396" type="Send1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="809735964850850" type="Send2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="214140591333583" type="Send3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="842397194940510" type="left1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="918767985508988" type="left2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="964044291703429" type="left3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="985838282710653" type="TimerConflict1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="447080431210824" type="TimerConflict2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="918243582533886" type="TimerConflict3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="217871693977960" type="NumberWinnerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                </action>
+                <action id="0" name="Set text" sid="900635351160650" type="Exit1">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(0, Porog)</param>
+                </action>
+                <action id="0" name="Set text" sid="771526646169866" type="Exit2">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(1, Porog)</param>
+                </action>
+                <action id="0" name="Set text" sid="830310730000107" type="Exit3">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(2, Porog)</param>
+                </action>
+                <action id="0" name="Set text" sid="347220185772419" type="State1">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(0, StateC)</param>
+                </action>
+                <action id="0" name="Set text" sid="996888458665068" type="State2">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(1, StateC)</param>
+                </action>
+                <action id="0" name="Set text" sid="628113414888649" type="State3">
+                    <param id="0" name="Text">&quot;&quot;&amp;ExitAndCountAct.At(2, StateC)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="323781302491721">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="843138646508151" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="945835316169935" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="822491599561393">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="624699745110321" type="System">
+                            <param id="0" name="Variable">IsConflict</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="162861509744534" type="System">
+                            <param id="0" name="Variable">prevWinner</param>
+                            <param id="1" name="Value">NumberWinner + 1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="674570608906590">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="874113119240027" type="System">
+                                    <param id="0" name="Variable">prevWinner</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="303546413567356">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="820940702819765" type="System">
+                                            <param id="0" name="Variable">CurrPrice</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">ExitAndCountAct.At(0, Porog)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="749558669235554" type="System">
+                                            <param id="0" name="Variable">NumberWinner</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="268066745119340" type="System">
+                                            <param id="0" name="First value">ExitAndCountAct.At(0, StateC)</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="179899067841752" type="System">
+                                            <param id="0" name="Variable">NumberWinner</param>
+                                            <param id="1" name="Value">int(Number1.Text) - 1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="356765743340083" type="NumberWinnerText">
+                                            <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="443397661135376" type="Form">
+                                            <param id="0" name="X">0</param>
+                                            <param id="1" name="Y">0</param>
+                                            <param id="2" name="Value">No</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="264266328242454" type="Form">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Y">0</param>
+                                            <param id="2" name="Value">No</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="970198739767584" type="Form">
+                                            <param id="0" name="X">2</param>
+                                            <param id="1" name="Y">0</param>
+                                            <param id="2" name="Value">No</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="372113630601536" type="System">
+                                            <param id="0" name="Variable">trash2</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="126902773699790">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="232603671839683" type="System">
+                                    <param id="0" name="Variable">prevWinner</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="732205414833171">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="273964863453811" type="System">
+                                            <param id="0" name="Variable">CurrPrice</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">ExitAndCountAct.At(1, Porog)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="122257779699566" type="System">
+                                            <param id="0" name="Variable">NumberWinner</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="487899932446408">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="872991402839328" type="System">
+                                                    <param id="0" name="Variable">prevWinner</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="651094825280575">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="106511898036497" type="System">
+                                                            <param id="0" name="First value">ExitAndCountAct.At(NumberWinner, StateC)</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Second value">&quot;Автоматический&quot;</param>
+                                                        </condition>
+                                                        <condition id="-8" name="Compare two values" sid="718057307601410" type="System">
+                                                            <param id="0" name="First value">ExitAndCountAct.At(1, StateC)</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Second value">&quot;Автоматический&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="126155379190332">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="672878389799775" type="System">
+                                                                    <param id="0" name="First value">ExitAndCountAct.At(NumberWinner, CountSess)</param>
+                                                                    <param id="1" name="Comparison">4</param>
+                                                                    <param id="2" name="Second value">ExitAndCountAct.At(1, CountSess)</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Set value" sid="312803616258173" type="System">
+                                                                    <param id="0" name="Variable">NumberWinner</param>
+                                                                    <param id="1" name="Value">int(Number2.Text)-1</param>
+                                                                </action>
+                                                                <action id="0" name="Set text" sid="145228618856868" type="NumberWinnerText">
+                                                                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                                                                </action>
+                                                                <action id="3" name="Set at XY" sid="794093820324343" type="Form">
+                                                                    <param id="0" name="X">0</param>
+                                                                    <param id="1" name="Y">0</param>
+                                                                    <param id="2" name="Value">No</param>
+                                                                </action>
+                                                                <action id="3" name="Set at XY" sid="909885842650673" type="Form">
+                                                                    <param id="0" name="X">1</param>
+                                                                    <param id="1" name="Y">0</param>
+                                                                    <param id="2" name="Value">No</param>
+                                                                </action>
+                                                                <action id="3" name="Set at XY" sid="776838521951980" type="Form">
+                                                                    <param id="0" name="X">2</param>
+                                                                    <param id="1" name="Y">0</param>
+                                                                    <param id="2" name="Value">No</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="208462923979404">
+                                                            <conditions>
+                                                                <condition id="-22" name="Else" sid="188846088852281" type="System" />
+                                                            </conditions>
+                                                            <actions />
+                                                            <sub-events>
+                                                                <event-block sid="708893905234994">
+                                                                    <conditions>
+                                                                        <condition id="-8" name="Compare two values" sid="777209663409165" type="System">
+                                                                            <param id="0" name="First value">ExitAndCountAct.At(NumberWinner, CountSess)</param>
+                                                                            <param id="1" name="Comparison">0</param>
+                                                                            <param id="2" name="Second value">ExitAndCountAct.At(1, CountSess)</param>
+                                                                        </condition>
+                                                                    </conditions>
+                                                                    <actions>
+                                                                        <action id="3" name="Set at XY" sid="804645195421806" type="Form">
+                                                                            <param id="0" name="X">NumberWinner</param>
+                                                                            <param id="1" name="Y">0</param>
+                                                                            <param id="2" name="Value">Yes</param>
+                                                                        </action>
+                                                                        <action id="3" name="Set at XY" sid="345761172427311" type="Form">
+                                                                            <param id="0" name="X">1</param>
+                                                                            <param id="1" name="Y">0</param>
+                                                                            <param id="2" name="Value">Yes</param>
+                                                                        </action>
+                                                                        <action id="-9" name="Set value" sid="360170836286837" type="System">
+                                                                            <param id="0" name="Variable">trash</param>
+                                                                            <param id="1" name="Value">55</param>
+                                                                        </action>
+                                                                    </actions>
+                                                                </event-block>
+                                                            </sub-events>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                                <event-block sid="583391967330220">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="166785996401483" type="System">
+                                                            <param id="0" name="First value">ExitAndCountAct.At(NumberWinner, StateC)</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                                                        </condition>
+                                                        <condition id="-8" name="Compare two values" sid="760279707901282" type="System">
+                                                            <param id="0" name="First value">ExitAndCountAct.At(1, StateC)</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Second value">&quot;Автоматический&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="329708453574281" type="System">
+                                                            <param id="0" name="Variable">NumberWinner</param>
+                                                            <param id="1" name="Value">int(Number2.Text)-1</param>
+                                                        </action>
+                                                        <action id="0" name="Set text" sid="993052955844994" type="NumberWinnerText">
+                                                            <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                                                        </action>
+                                                        <action id="3" name="Set at XY" sid="845363073489137" type="Form">
+                                                            <param id="0" name="X">0</param>
+                                                            <param id="1" name="Y">0</param>
+                                                            <param id="2" name="Value">No</param>
+                                                        </action>
+                                                        <action id="3" name="Set at XY" sid="522207433343200" type="Form">
+                                                            <param id="0" name="X">1</param>
+                                                            <param id="1" name="Y">0</param>
+                                                            <param id="2" name="Value">No</param>
+                                                        </action>
+                                                        <action id="3" name="Set at XY" sid="156511489222039" type="Form">
+                                                            <param id="0" name="X">2</param>
+                                                            <param id="1" name="Y">0</param>
+                                                            <param id="2" name="Value">No</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="868456770747092">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="659194588750782" type="System" />
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="226271069657917">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="445496771246594" type="System">
+                                                            <param id="0" name="First value">CurrPrice</param>
+                                                            <param id="1" name="Comparison">2</param>
+                                                            <param id="2" name="Second value">ExitAndCountAct.At(2, Porog)</param>
+                                                        </condition>
+                                                        <condition id="-8" name="Compare two values" sid="869796200335979" type="System">
+                                                            <param id="0" name="First value">ExitAndCountAct.At(1, StateC)</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="3" name="Set at XY" sid="263744506593637" type="Form">
+                                                            <param id="0" name="X">0</param>
+                                                            <param id="1" name="Y">0</param>
+                                                            <param id="2" name="Value">No</param>
+                                                        </action>
+                                                        <action id="3" name="Set at XY" sid="885170695632927" type="Form">
+                                                            <param id="0" name="X">1</param>
+                                                            <param id="1" name="Y">0</param>
+                                                            <param id="2" name="Value">No</param>
+                                                        </action>
+                                                        <action id="3" name="Set at XY" sid="312468373754335" type="Form">
+                                                            <param id="0" name="X">2</param>
+                                                            <param id="1" name="Y">0</param>
+                                                            <param id="2" name="Value">No</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="960564395023676" type="System">
+                                                            <param id="0" name="Variable">trash2</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="807703192704339">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="175984541076649" type="System" />
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="937626925031490">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="812420074251333" type="System">
+                                                                    <param id="0" name="First value">ExitAndCountAct.At(2, StateC)</param>
+                                                                    <param id="1" name="Comparison">1</param>
+                                                                    <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Set value" sid="829483284149755" type="System">
+                                                                    <param id="0" name="Variable">NumberWinner</param>
+                                                                    <param id="1" name="Value">int(Number2.Text) - 1</param>
+                                                                </action>
+                                                                <action id="0" name="Set text" sid="704063702334602" type="NumberWinnerText">
+                                                                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                                                                </action>
+                                                                <action id="3" name="Set at XY" sid="421811974176489" type="Form">
+                                                                    <param id="0" name="X">0</param>
+                                                                    <param id="1" name="Y">0</param>
+                                                                    <param id="2" name="Value">No</param>
+                                                                </action>
+                                                                <action id="3" name="Set at XY" sid="659239033758731" type="Form">
+                                                                    <param id="0" name="X">1</param>
+                                                                    <param id="1" name="Y">0</param>
+                                                                    <param id="2" name="Value">No</param>
+                                                                </action>
+                                                                <action id="3" name="Set at XY" sid="458742806441230" type="Form">
+                                                                    <param id="0" name="X">2</param>
+                                                                    <param id="1" name="Y">0</param>
+                                                                    <param id="2" name="Value">No</param>
+                                                                </action>
+                                                                <action id="-9" name="Set value" sid="764371219146671" type="System">
+                                                                    <param id="0" name="Variable">trash2</param>
+                                                                    <param id="1" name="Value">0</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="771350467059306">
+                                                            <conditions>
+                                                                <condition id="-22" name="Else" sid="285422552267152" type="System" />
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="3" name="Set at XY" sid="647052993326423" type="Form">
+                                                                    <param id="0" name="X">0</param>
+                                                                    <param id="1" name="Y">0</param>
+                                                                    <param id="2" name="Value">No</param>
+                                                                </action>
+                                                                <action id="3" name="Set at XY" sid="843828408504384" type="Form">
+                                                                    <param id="0" name="X">1</param>
+                                                                    <param id="1" name="Y">0</param>
+                                                                    <param id="2" name="Value">No</param>
+                                                                </action>
+                                                                <action id="3" name="Set at XY" sid="954915246262035" type="Form">
+                                                                    <param id="0" name="X">2</param>
+                                                                    <param id="1" name="Y">0</param>
+                                                                    <param id="2" name="Value">No</param>
+                                                                </action>
+                                                                <action id="-9" name="Set value" sid="487369916826549" type="System">
+                                                                    <param id="0" name="Variable">trash2</param>
+                                                                    <param id="1" name="Value">0</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="546400036617259">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="876600874096358" type="System">
+                                    <param id="0" name="Variable">prevWinner</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="450558646158566">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="446460963757683" type="System">
+                                            <param id="0" name="Variable">CurrPrice</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">ExitAndCountAct.At(2, Porog)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="915590045577501" type="System">
+                                            <param id="0" name="Variable">NumberWinner</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="652296085057782">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="592532452272473" type="System">
+                                                    <param id="0" name="First value">ExitAndCountAct.At(NumberWinner, StateC)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;Автоматический&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="122468645547911" type="System">
+                                                    <param id="0" name="First value">ExitAndCountAct.At(2, StateC)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;Автоматический&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="786513322662921">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="721469115910675" type="System">
+                                                            <param id="0" name="First value">ExitAndCountAct.At(NumberWinner, CountSess)</param>
+                                                            <param id="1" name="Comparison">4</param>
+                                                            <param id="2" name="Second value">ExitAndCountAct.At(2, CountSess)</param>
+                                                        </condition>
+                                                        <condition id="-8" name="Compare two values" sid="626327204514919" type="System">
+                                                            <param id="0" name="First value">ExitAndCountAct.At(2, StateC)</param>
+                                                            <param id="1" name="Comparison">1</param>
+                                                            <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="519726982189252" type="System">
+                                                            <param id="0" name="Variable">NumberWinner</param>
+                                                            <param id="1" name="Value">int(Number3.Text)-1</param>
+                                                        </action>
+                                                        <action id="0" name="Set text" sid="652290185270817" type="NumberWinnerText">
+                                                            <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                                                        </action>
+                                                        <action id="3" name="Set at XY" sid="140074714942202" type="Form">
+                                                            <param id="0" name="X">0</param>
+                                                            <param id="1" name="Y">0</param>
+                                                            <param id="2" name="Value">No</param>
+                                                        </action>
+                                                        <action id="3" name="Set at XY" sid="443334171598888" type="Form">
+                                                            <param id="0" name="X">1</param>
+                                                            <param id="1" name="Y">0</param>
+                                                            <param id="2" name="Value">No</param>
+                                                        </action>
+                                                        <action id="3" name="Set at XY" sid="649675936630525" type="Form">
+                                                            <param id="0" name="X">2</param>
+                                                            <param id="1" name="Y">0</param>
+                                                            <param id="2" name="Value">No</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="648865216388679">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="854693225018360" type="System" />
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="785290041035205">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="417620952655224" type="System">
+                                                                    <param id="0" name="First value">ExitAndCountAct.At(NumberWinner, CountSess)</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Second value">ExitAndCountAct.At(2, CountSess)</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="3" name="Set at XY" sid="944759741516941" type="Form">
+                                                                    <param id="0" name="X">NumberWinner</param>
+                                                                    <param id="1" name="Y">0</param>
+                                                                    <param id="2" name="Value">Yes</param>
+                                                                </action>
+                                                                <action id="3" name="Set at XY" sid="579751220564505" type="Form">
+                                                                    <param id="0" name="X">2</param>
+                                                                    <param id="1" name="Y">0</param>
+                                                                    <param id="2" name="Value">Yes</param>
+                                                                </action>
+                                                                <action id="-9" name="Set value" sid="573659275574834" type="System">
+                                                                    <param id="0" name="Variable">trash3</param>
+                                                                    <param id="1" name="Value">0</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="118957621361959">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="778878817512717" type="System">
+                                                    <param id="0" name="First value">ExitAndCountAct.At(NumberWinner, StateC)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="578269755462645" type="System">
+                                                    <param id="0" name="First value">ExitAndCountAct.At(2, StateC)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;Автоматический&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="701971335385654" type="System">
+                                                    <param id="0" name="First value">ExitAndCountAct.At(2, StateC)</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="977288033645451" type="System">
+                                                    <param id="0" name="Variable">NumberWinner</param>
+                                                    <param id="1" name="Value">int(Number3.Text)-1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="472883627037422" type="NumberWinnerText">
+                                                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                                                </action>
+                                                <action id="3" name="Set at XY" sid="346271861740062" type="Form">
+                                                    <param id="0" name="X">0</param>
+                                                    <param id="1" name="Y">0</param>
+                                                    <param id="2" name="Value">No</param>
+                                                </action>
+                                                <action id="3" name="Set at XY" sid="168849207122881" type="Form">
+                                                    <param id="0" name="X">1</param>
+                                                    <param id="1" name="Y">0</param>
+                                                    <param id="2" name="Value">No</param>
+                                                </action>
+                                                <action id="3" name="Set at XY" sid="274266322861192" type="Form">
+                                                    <param id="0" name="X">2</param>
+                                                    <param id="1" name="Y">0</param>
+                                                    <param id="2" name="Value">No</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="109531079352073">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="838806208442837" type="System">
+                                    <param id="0" name="First value">Form.At(0, 0)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">Yes</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set visible" sid="872589482917281" type="Change1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="2" name="Set visible" sid="225224736833827" type="Send1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="555615876133218" type="System">
+                                    <param id="0" name="Variable">IsConflict</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="558816165324916" type="System">
+                                    <param id="0" name="Variable">isTimerConflict</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="507070507300508" type="System">
+                                    <param id="0" name="Variable">TimerConflict</param>
+                                    <param id="1" name="Value">15</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="952068418274630" type="left1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="759806369302399" type="TimerConflict1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="419615101239774" type="System">
+                                    <param id="0" name="Variable">NumberWinner</param>
+                                    <param id="1" name="Value">prevWinner-1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="936420208488959" type="NumberWinnerText">
+                                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="725189595691418">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="275886989645350" type="System">
+                                    <param id="0" name="First value">Form.At(1, 0)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">Yes</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set visible" sid="174347638998731" type="Change2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="2" name="Set visible" sid="222460714755798" type="Send2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="904225016358028" type="System">
+                                    <param id="0" name="Variable">IsConflict</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="357505559006511" type="System">
+                                    <param id="0" name="Variable">isTimerConflict</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="251311630970927" type="System">
+                                    <param id="0" name="Variable">TimerConflict</param>
+                                    <param id="1" name="Value">15</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="208376276050307" type="left2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="258173759850936" type="TimerConflict2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="922260846927050" type="System">
+                                    <param id="0" name="Variable">NumberWinner</param>
+                                    <param id="1" name="Value">prevWinner-1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="613273731801191" type="NumberWinnerText">
+                                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="438248978180169">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="393749298881414" type="System">
+                                    <param id="0" name="First value">Form.At(2, 0)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">Yes</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set visible" sid="526124823912331" type="Change3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="2" name="Set visible" sid="183444759935594" type="Send3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="263176375932444" type="System">
+                                    <param id="0" name="Variable">IsConflict</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="976660104226660" type="System">
+                                    <param id="0" name="Variable">isTimerConflict</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="198980530229537" type="System">
+                                    <param id="0" name="Variable">TimerConflict</param>
+                                    <param id="1" name="Value">15</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="583113186813945" type="left3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="894161694548399" type="TimerConflict3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="273736496746721" type="System">
+                                    <param id="0" name="Variable">NumberWinner</param>
+                                    <param id="1" name="Value">prevWinner-1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="182534449465664" type="NumberWinnerText">
+                                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="172185408303866">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="480211906367543" type="System">
+                                    <param id="0" name="Variable">prevWinner</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">NumberWinner + 1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="848777648801971" type="System">
+                                    <param id="0" name="Variable">CurrPrice</param>
+                                    <param id="1" name="Value">Step</param>
+                                </action>
+                                <action id="0" name="Set text" sid="246263583598722" type="CurrPriceText">
+                                    <param id="0" name="Text">&quot;&quot;&amp;CurrPrice</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="871529816832479" type="System">
+                                    <param id="0" name="Variable">isXBET</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="758469499851211">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="369218498597455" type="System">
+                                    <param id="0" name="Variable">prevWinner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">NumberWinner + 1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="569423185450269">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="218184853490838" type="System">
+                                            <param id="0" name="First value">ExitAndCountAct.At(0, StateC)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="501950516656202" type="System">
+                                            <param id="0" name="Variable">prevWinner</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Set visible" sid="371259227235743" type="Send1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="751912745854957">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="488758304766980" type="System">
+                                            <param id="0" name="First value">ExitAndCountAct.At(1, StateC)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="827719440461582" type="System">
+                                            <param id="0" name="Variable">prevWinner</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Set visible" sid="213376427398842" type="Send2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="113326267380273">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="216135122573320" type="System">
+                                            <param id="0" name="First value">ExitAndCountAct.At(2, StateC)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="311568036259835" type="System">
+                                            <param id="0" name="Variable">prevWinner</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Set visible" sid="250740288311949" type="Send3">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="486132159050264">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="332972842154123" type="System">
+                            <param id="0" name="Variable">IsConflict</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="245571043297574">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="271819450577172" type="System">
+                                    <param id="0" name="First value">ExitAndCountAct.At(0, StateC)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set visible" sid="808786852336026" type="Send1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="448286049445813">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="818203178101602" type="System">
+                                    <param id="0" name="First value">ExitAndCountAct.At(1, StateC)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set visible" sid="645506794255037" type="Send2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="817029452989971">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="695276756174032" type="System">
+                                    <param id="0" name="First value">ExitAndCountAct.At(2, StateC)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set visible" sid="184770409957600" type="Send3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="927791962622200">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="594970930860346" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="497429426188253" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="481463933983637" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="225121422137574" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="247713747002211" type="System">
+                    <param id="0" name="Variable">TimerConflict</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="720368577081549" type="TimerConflict1">
+                    <param id="0" name="Text">&quot;&quot;&amp;TimerConflict&amp;&quot;sec.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="263005592688062" type="TimerConflict2">
+                    <param id="0" name="Text">&quot;&quot;&amp;TimerConflict&amp;&quot;sec.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="613964248450552" type="TimerConflict3">
+                    <param id="0" name="Text">&quot;&quot;&amp;TimerConflict&amp;&quot;sec.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="173049764722077">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="819267612413264" type="System">
+                    <param id="0" name="Variable">TimerConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="811963124039641" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="245044338209115" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="642564662913038" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="585733361330907" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="727639896374295" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="724542421903998" type="left1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="841186323473562" type="left2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="667940917943213" type="left3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="921511456826390" type="TimerConflict1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="314570634964596" type="TimerConflict2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="935993574229881" type="TimerConflict3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="156264411585443" type="Change1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="796397994288766" type="Change2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="216471780876157" type="Change3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="714171086801968" type="Send1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="446707761767497" type="Send2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="386090401471097" type="Send3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="504617629598536">
+            <conditions>
+                <condition id="0" name="On clicked" sid="876449740397392" type="Send1" />
+                <condition id="-14" name="Compare variable" sid="345123780180024" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="641192113281126" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="716548997379636" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="447526980723375" type="System">
+                    <param id="0" name="Variable">NumberWinner</param>
+                    <param id="1" name="Value">int(Number1.Text)-1</param>
+                </action>
+                <action id="0" name="Set text" sid="244198260723435" type="NumberWinnerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                </action>
+                <action id="3" name="Set at XY" sid="836022231321252" type="Form">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="218625420952043" type="Form">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="209193585039999" type="Form">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="2" name="Set visible" sid="555247962301152" type="Change1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="141830791467186" type="Change2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="398588379773652" type="Change3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="341447529128945" type="Send1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="556881635359056" type="Send2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="644351755221738" type="Send3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="780802360761841" type="left1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="688818358783117" type="left2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="924753922281444" type="left3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="561049321254141" type="TimerConflict1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="923684863867284" type="TimerConflict2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="552139833323026" type="TimerConflict3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="701045460083745" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="889207680032028" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="531418298858573" type="System">
+                    <param id="0" name="Variable">CurrPrice</param>
+                    <param id="1" name="Value">Step</param>
+                </action>
+                <action id="0" name="Set text" sid="505137872977814" type="CurrPriceText">
+                    <param id="0" name="Text">&quot;&quot;&amp;CurrPrice</param>
+                </action>
+                <action id="-9" name="Set value" sid="545153731045580" type="System">
+                    <param id="0" name="Variable">isXBET</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="141903878384540">
+            <conditions>
+                <condition id="0" name="On clicked" sid="802532800237398" type="Send2" />
+                <condition id="-14" name="Compare variable" sid="108113175015774" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="168914378246838" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="662677898943676" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="868569726113276" type="System">
+                    <param id="0" name="Variable">NumberWinner</param>
+                    <param id="1" name="Value">int(Number2.Text)-1</param>
+                </action>
+                <action id="0" name="Set text" sid="104062305616787" type="NumberWinnerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                </action>
+                <action id="3" name="Set at XY" sid="552359879549499" type="Form">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="592713965855943" type="Form">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="695328117179478" type="Form">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="2" name="Set visible" sid="484321785224503" type="Change1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="114772721437968" type="Change2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="625411532172176" type="Change3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="100886815467360" type="Send1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="994522515474357" type="Send2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="347813168107445" type="Send3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="870687214705479" type="left1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="458939244407498" type="left2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="420917779540071" type="left3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="175359584777540" type="TimerConflict1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="250300425173787" type="TimerConflict2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="226325940584732" type="TimerConflict3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="573711175997918" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="668883714837491" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="924668504767212" type="System">
+                    <param id="0" name="Variable">CurrPrice</param>
+                    <param id="1" name="Value">Step</param>
+                </action>
+                <action id="0" name="Set text" sid="276813126970893" type="CurrPriceText">
+                    <param id="0" name="Text">&quot;&quot;&amp;CurrPrice</param>
+                </action>
+                <action id="-9" name="Set value" sid="159322595935239" type="System">
+                    <param id="0" name="Variable">isXBET</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="992674689919906">
+            <conditions>
+                <condition id="0" name="On clicked" sid="837452542300749" type="Send3" />
+                <condition id="-14" name="Compare variable" sid="425080383985406" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="709947207642155" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="254102749177407" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="867387010454810" type="System">
+                    <param id="0" name="Variable">NumberWinner</param>
+                    <param id="1" name="Value">int(Number3.Text)-1</param>
+                </action>
+                <action id="0" name="Set text" sid="761247007012989" type="NumberWinnerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                </action>
+                <action id="3" name="Set at XY" sid="901785425050732" type="Form">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="837186622362253" type="Form">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="486789264339882" type="Form">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="2" name="Set visible" sid="228140000985783" type="Change1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="822906238195397" type="Change2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="566000491237564" type="Change3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="135183778719507" type="Send1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="841965731818209" type="Send2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="986149918386374" type="Send3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="835099566220792" type="left1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="447899567375366" type="left2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="230903781622505" type="left3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="499259825215813" type="TimerConflict1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="956252910594078" type="TimerConflict2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="256676916115453" type="TimerConflict3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="389992350510817" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="711928334994641" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="851205728570349" type="System">
+                    <param id="0" name="Variable">CurrPrice</param>
+                    <param id="1" name="Value">Step</param>
+                </action>
+                <action id="0" name="Set text" sid="637963971845464" type="CurrPriceText">
+                    <param id="0" name="Text">&quot;&quot;&amp;CurrPrice</param>
+                </action>
+                <action id="-9" name="Set value" sid="723814463752874" type="System">
+                    <param id="0" name="Variable">isXBET</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="138318875393744">
+            <conditions>
+                <condition id="0" name="On clicked" sid="836407358091578" type="Change1" />
+                <condition id="-14" name="Compare variable" sid="333340360127210" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="373497217145703" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="556183606104507" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="113639344852896" type="System">
+                    <param id="0" name="Variable">NumberWinner</param>
+                    <param id="1" name="Value">int(Number1.Text)-1</param>
+                </action>
+                <action id="0" name="Set text" sid="683863283560279" type="NumberWinnerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                </action>
+                <action id="3" name="Set at XY" sid="595018953792439" type="Form">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="459307533082466" type="Form">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="106366606578156" type="Form">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="2" name="Set visible" sid="811267237456577" type="Change1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="945506470962475" type="Change2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="274883849274939" type="Change3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="276556062162947" type="Send1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="670486855955550" type="Send2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="627205076682207" type="Send3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="724955322699219" type="left1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="495202702438937" type="left2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="238641749577831" type="left3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="222213660617613" type="TimerConflict1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="769887494175403" type="TimerConflict2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="268499170314867" type="TimerConflict3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="714749447934142" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="192389754803946" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="3" name="Set at XY" sid="572716738469140" type="ExitAndCountAct">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">StateC</param>
+                    <param id="2" name="Value">&quot;Ручной&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="577120087308683" type="State1">
+                    <param id="0" name="Text">&quot;Ручной&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="675488790655532" type="ExitAndCountAct">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">Porog</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="587543454419981" type="Exit1">
+                    <param id="0" name="Text">&quot;&quot;&amp;0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="306429143161376" type="System">
+                    <param id="0" name="Variable">CurrPrice</param>
+                    <param id="1" name="Value">Step</param>
+                </action>
+                <action id="0" name="Set text" sid="255850676771865" type="CurrPriceText">
+                    <param id="0" name="Text">&quot;&quot;&amp;CurrPrice</param>
+                </action>
+                <action id="-9" name="Set value" sid="808076750506904" type="System">
+                    <param id="0" name="Variable">isXBET</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="510773322825915">
+            <conditions>
+                <condition id="0" name="On clicked" sid="457104602196358" type="Change2" />
+                <condition id="-14" name="Compare variable" sid="390518399794771" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="726343701419625" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="807835325833849" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="905495700141977" type="System">
+                    <param id="0" name="Variable">NumberWinner</param>
+                    <param id="1" name="Value">int(Number2.Text)-1</param>
+                </action>
+                <action id="0" name="Set text" sid="652466202987396" type="NumberWinnerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                </action>
+                <action id="3" name="Set at XY" sid="661795879330586" type="Form">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="213002970231315" type="Form">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="547786537118724" type="Form">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="2" name="Set visible" sid="811464151346741" type="Change1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="448799049092183" type="Change2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="160554650379802" type="Change3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="399022316252074" type="Send1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="176841491749908" type="Send2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="980309105172802" type="Send3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="898640760823434" type="left1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="784375782283480" type="left2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="391534337499269" type="left3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="325447578264461" type="TimerConflict1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="134934498781653" type="TimerConflict2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="628118946544188" type="TimerConflict3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="139962392219231" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="282411317458302" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="3" name="Set at XY" sid="649751642980622" type="ExitAndCountAct">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">StateC</param>
+                    <param id="2" name="Value">&quot;Ручной&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="107365062502123" type="State2">
+                    <param id="0" name="Text">&quot;Ручной&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="106312187902795" type="ExitAndCountAct">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">Porog</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="960299807058183" type="Exit2">
+                    <param id="0" name="Text">&quot;&quot;&amp;0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="669300570996228" type="System">
+                    <param id="0" name="Variable">CurrPrice</param>
+                    <param id="1" name="Value">Step</param>
+                </action>
+                <action id="0" name="Set text" sid="795172976089354" type="CurrPriceText">
+                    <param id="0" name="Text">&quot;&quot;&amp;CurrPrice</param>
+                </action>
+                <action id="-9" name="Set value" sid="880150676180503" type="System">
+                    <param id="0" name="Variable">isXBET</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="916022353281524">
+            <conditions>
+                <condition id="0" name="On clicked" sid="590910782057768" type="Change3" />
+                <condition id="-14" name="Compare variable" sid="287642684747621" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="808184351310282" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="561694909107844" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="177308307655531" type="System">
+                    <param id="0" name="Variable">NumberWinner</param>
+                    <param id="1" name="Value">int(Number3.Text)-1</param>
+                </action>
+                <action id="0" name="Set text" sid="644393637176975" type="NumberWinnerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                </action>
+                <action id="3" name="Set at XY" sid="675967774106248" type="Form">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="546311429091361" type="Form">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="183211008658566" type="Form">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="2" name="Set visible" sid="999260609355048" type="Change1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="795771589349807" type="Change2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="613536742585912" type="Change3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="235256297625909" type="Send1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="313653555999941" type="Send2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="484554684922501" type="Send3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="313858499067966" type="left1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="375960919089522" type="left2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="920619264146726" type="left3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="729479194389560" type="TimerConflict1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="656318305324976" type="TimerConflict2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="752015765209768" type="TimerConflict3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="951550875033548" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="952937435065703" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="3" name="Set at XY" sid="967288666232792" type="ExitAndCountAct">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">StateC</param>
+                    <param id="2" name="Value">&quot;Ручной&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="172957954655147" type="State3">
+                    <param id="0" name="Text">&quot;Ручной&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="787156436172922" type="ExitAndCountAct">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">Porog</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="376199554229067" type="Exit3">
+                    <param id="0" name="Text">&quot;&quot;&amp;0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="747235751775204" type="System">
+                    <param id="0" name="Variable">CurrPrice</param>
+                    <param id="1" name="Value">Step</param>
+                </action>
+                <action id="0" name="Set text" sid="909296042840475" type="CurrPriceText">
+                    <param id="0" name="Text">&quot;&quot;&amp;CurrPrice</param>
+                </action>
+                <action id="-9" name="Set value" sid="790738669856658" type="System">
+                    <param id="0" name="Variable">isXBET</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="866679400012690">
+            <conditions>
+                <condition id="0" name="On clicked" sid="987446965809269" type="Send1" />
+                <condition id="-14" name="Compare variable" sid="254316365933360" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="633696222770571" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="129133004982346" type="System">
+                    <param id="0" name="First value">ExitAndCountAct.At(0, StateC)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="662508161979605" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="604757406659293" type="System">
+                    <param id="0" name="Variable">NumberWinner</param>
+                    <param id="1" name="Value">int(Number1.Text)-1</param>
+                </action>
+                <action id="0" name="Set text" sid="516943477174330" type="NumberWinnerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                </action>
+                <action id="3" name="Set at XY" sid="795047950448542" type="Form">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="653555731141220" type="Form">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="817477655945697" type="Form">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="2" name="Set visible" sid="412551429249735" type="Change1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="212318529030284" type="Change2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="652851138374097" type="Change3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="979911723708012" type="Send1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="624493806464686" type="Send2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="664056792948405" type="Send3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="258527714703306" type="left1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="788201831271406" type="left2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="915788585348853" type="left3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="119802204417211" type="TimerConflict1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="470074916487645" type="TimerConflict2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="910989934601988" type="TimerConflict3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="532060224048507" type="System">
+                    <param id="0" name="Variable">CurrPrice</param>
+                    <param id="1" name="Value">Step</param>
+                </action>
+                <action id="0" name="Set text" sid="319842333383853" type="CurrPriceText">
+                    <param id="0" name="Text">&quot;&quot;&amp;CurrPrice</param>
+                </action>
+                <action id="-9" name="Set value" sid="466844346453432" type="System">
+                    <param id="0" name="Variable">isXBET</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="793688680447970">
+            <conditions>
+                <condition id="0" name="On clicked" sid="476217690656184" type="Send2" />
+                <condition id="-14" name="Compare variable" sid="432837130617386" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="676062104223661" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="485371161582829" type="System">
+                    <param id="0" name="First value">ExitAndCountAct.At(1, StateC)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="320577215803942" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="187073347161434" type="System">
+                    <param id="0" name="Variable">NumberWinner</param>
+                    <param id="1" name="Value">int(Number2.Text)-1</param>
+                </action>
+                <action id="0" name="Set text" sid="605068757393920" type="NumberWinnerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                </action>
+                <action id="3" name="Set at XY" sid="655195201513952" type="Form">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="222437811032023" type="Form">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="423972549351174" type="Form">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="2" name="Set visible" sid="648867925262767" type="Change1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="927440874551657" type="Change2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="404074590423975" type="Change3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="379316738842237" type="Send1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="930975413128554" type="Send2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="263683940436604" type="Send3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="940982378794033" type="left1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="600320557884873" type="left2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="727435931337130" type="left3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="225908819208144" type="TimerConflict1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="790408875211503" type="TimerConflict2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="957944472649265" type="TimerConflict3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="395395053805437" type="System">
+                    <param id="0" name="Variable">CurrPrice</param>
+                    <param id="1" name="Value">Step</param>
+                </action>
+                <action id="0" name="Set text" sid="238715429730887" type="CurrPriceText">
+                    <param id="0" name="Text">&quot;&quot;&amp;CurrPrice</param>
+                </action>
+                <action id="-9" name="Set value" sid="390776878942995" type="System">
+                    <param id="0" name="Variable">isXBET</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="647191032312443">
+            <conditions>
+                <condition id="0" name="On clicked" sid="941370422128016" type="Send3" />
+                <condition id="-14" name="Compare variable" sid="306470601250729" type="System">
+                    <param id="0" name="Variable">IsConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="721179466856114" type="System">
+                    <param id="0" name="Variable">isTimerConflict</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="312624805453769" type="System">
+                    <param id="0" name="First value">ExitAndCountAct.At(2, StateC)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Ручной&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="844115551558609" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="351094476839504" type="System">
+                    <param id="0" name="Variable">NumberWinner</param>
+                    <param id="1" name="Value">int(Number3.Text)-1</param>
+                </action>
+                <action id="0" name="Set text" sid="380768739278919" type="NumberWinnerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;(NumberWinner+1)</param>
+                </action>
+                <action id="3" name="Set at XY" sid="399913705712752" type="Form">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="384666288252328" type="Form">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="3" name="Set at XY" sid="202407769593656" type="Form">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">No</param>
+                </action>
+                <action id="2" name="Set visible" sid="888939298407346" type="Change1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="368282205009607" type="Change2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="610096226151736" type="Change3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="188892322325936" type="Send1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="739049548237440" type="Send2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="959634954276253" type="Send3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="790291475513886" type="left1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="295405461329971" type="left2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="233292469590000" type="left3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="148457535395340" type="TimerConflict1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="423859805853938" type="TimerConflict2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="631986054804623" type="TimerConflict3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="269165095323331" type="System">
+                    <param id="0" name="Variable">CurrPrice</param>
+                    <param id="1" name="Value">Step</param>
+                </action>
+                <action id="0" name="Set text" sid="313041146744381" type="CurrPriceText">
+                    <param id="0" name="Text">&quot;&quot;&amp;CurrPrice</param>
+                </action>
+                <action id="-9" name="Set value" sid="134488424494113" type="System">
+                    <param id="0" name="Variable">isXBET</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="626340526419253">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="711433597001816" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">300</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="878908191582656" type="System">
+                    <param id="0" name="Variable">isXBET</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="176376442900562" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="485772895577822" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">300</param>
+                </action>
+                <action id="-9" name="Set value" sid="884894096906456" type="System">
+                    <param id="0" name="Variable">isXBET</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="450350588706909" type="TimerText">
+                    <param id="0" name="Text">&quot;&quot;&amp;int(Timer/60)&amp;&quot;min. &quot;&amp;(Timer - int(Timer/60)*60)&amp;&quot;sec.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="809265823518931">
+            <conditions>
+                <condition id="-22" name="Else" sid="794338022365301" type="System" />
+                <condition id="-14" name="Compare variable" sid="637428915314461" type="System">
+                    <param id="0" name="Variable">IsGamePlaying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="773585844382203" type="System">
+                    <param id="0" name="Variable">isXBET</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <variable constant="0" name="isXBET2" sid="362992052651026" static="0" type="number">0</variable>
+        <variable constant="0" name="prevWinner2" sid="406239304083630" static="0" type="number">-1</variable>
+        <variable constant="0" name="trash4" sid="607532003540891" static="0" type="number">9999</variable>
+        <variable constant="0" name="trash6" sid="161544481378989" static="0" type="number">1111</variable>
+        <variable constant="0" name="trash5" sid="371358712288578" static="0" type="number">123</variable>
+        <variable constant="0" name="TimerConflict2" sid="507018908291560" static="0" type="number">0</variable>
+        <variable constant="0" name="isTimerConflict2" sid="823955121949020" static="0" type="number">0</variable>
+        <variable constant="0" name="IsConflict2" sid="866567385831136" static="0" type="number">0</variable>
+        <variable constant="0" name="No2" sid="266561086108650" static="0" type="number">0</variable>
+        <variable constant="0" name="Yes2" sid="227131680075597" static="0" type="number">1</variable>
+        <variable constant="0" name="Porog2" sid="387057019994266" static="0" type="number">0</variable>
+        <variable constant="0" name="CountSess2" sid="980172561085433" static="0" type="number">1</variable>
+        <variable constant="0" name="StateC2" sid="994575367656877" static="0" type="number">2</variable>
+        <variable constant="0" name="TimerConst2" sid="870928504312576" static="0" type="number">360</variable>
+        <variable constant="0" name="IsGamePlaying2" sid="520057485402660" static="0" type="number">0</variable>
+        <variable constant="0" name="Timer2" sid="819839542203528" static="0" type="number">360</variable>
+        <variable constant="0" name="NumberWinner2" sid="168078893449960" static="0" type="number">-1</variable>
+        <variable constant="0" name="StartPrice2" sid="718313588279730" static="0" type="number">1000</variable>
+        <variable constant="0" name="CurrPrice2" sid="473540842225820" static="0" type="number">1000</variable>
+        <variable constant="0" name="Step2" sid="947605670858428" static="0" type="number">50</variable>
+        <variable constant="0" name="Number2" sid="456667939948443" static="0" type="number">0</variable>
+        <variable constant="0" name="PorogExit2" sid="171044428642360" static="0" type="number">0</variable>
+        <variable constant="0" name="CountActiveSessions2" sid="475081286785663" static="0" type="number">0</variable>
+    </events>
+</c2eventsheet>
